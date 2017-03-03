@@ -10,31 +10,41 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-
-        <!-- Logo -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+<!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand"><img src="smalllgo.png" alingn="center"></a>
-        </div>
-
-        <!-- Menu Items -->
-        <div class="collapse navbar-collapse" id="mainNavBar">
+            <a class="navbar-brand" href="#"><img src="smalllgo.png" alingn="center"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">My Profile</a></li>
-                <li><a href="#">My Messages</a></li>
-                <li><a href="#">Contact</a></li>
+			 <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Profile<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">My Messages</a></li>
+                  <li><a href="#">Change Password</a></li>
+                <!--  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Sign Out</a></li> -->
+                </ul>
+              </li>
+              <li><a href="#">My Courses</a></li>
+              <li><a href="#">All Courses</a></li>
+              <li><a href="#">Contact Us</a></li>
             </ul>
-			
-        </div>
-
-    </div>
-</nav>
-
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="./">Sign Out<span class="sr-only">(current)</span></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+	  <!-- End of Nav Bar -->
   <div class="container-fluid">
 
     <div class="well" style="color:#2980b9">
@@ -47,7 +57,7 @@
 
 <div class="alert" style="background-color:#2980b9">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
-  <strong>Notification:</strong> New lecture sliders uploaded for Beginners HTML!
+  <strong>Notification:</strong> New lecture slides uploaded for Beginners HTML!
 </div>
 
             <!--
@@ -65,25 +75,24 @@
 	
 	</div>
 </div></div>
+
         <div class="col-xs-6"><div class="panel panel-default">
     <div class="panel-heading">My Courses</div>
     <div class="panel-body">
 
-<ul>
-<li>Beginners HTML</li>
-<li>Advanced CSS</li>
-</ul>
+ <ul class="list-group">
+    <li class="list-group-item">Beginners HTML<span class="badge badge-default">View Course</span></li>
+    <li class="list-group-item">Beginners CSS<span class="badge badge-default">View Course</span></li>
+    <li class="list-group-item">Beginners PHP<span class="badge badge-default">View Course</span></li>
+    <li class="list-group-item">Fundamentals of UI & UX Design<span class="badge badge-default">View Course</span></li>
+    <li class="list-group-item">Beginners PHP<span class="badge badge-default">View Course</span></li>
+  </ul>
+</div>
 
 </div>
 </div></div>
-      </div>
-
-            
-
+<div class="well"><div class="text-center"><h2>New courses are always being added on a regular basis! Click here to view all our courses</h2></div></div>
         </div>
-		
-</div>
-    </div>
 
 </body>
 </html>

@@ -1,0 +1,12 @@
+.background{
+	-fx-background-image:url(/resources/background.png) 
+}
+
+@font-face {
+    src: url('/resources/Roboto-Bold.ttf');
+}
+
+.root {
+  -fx-font-size: 9pt;
+}
+
